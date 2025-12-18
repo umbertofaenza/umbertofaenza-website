@@ -123,6 +123,10 @@ body {
   color: inherit;
 }
 
+a:focus-visible {
+  outline: none;
+}
+
 .close-policy {
   position: absolute;
   top: 1rem;
