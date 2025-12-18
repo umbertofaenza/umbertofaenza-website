@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #191a1f;
+  color: #eaeaea;
+  font-family: "Stack Sans Headline", sans-serif;
+}
+
+/** MAIN */
+
+.main-container {
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+.name > h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.role > h2 {
+  color: #7dd3fc;
+  font-weight: 300;
+}
+
+.links {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.65rem;
+}
+
+.icon-link {
+  color: inherit;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  opacity: 1;
+  color: inherit;
+}
+
+/** FOOTER */
+
+.footer-container {
+  height: 6vh;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 1rem;
+}
+
+.footer-container .policy-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-container .policy-link,
+.footer-container .copyright {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.footer-container .policy-link:hover {
+  opacity: 1;
+}
+
+/** POLICY MODAL */
+
+#policyModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+  background: #191a1f;
+  color: #eaeaea;
+  font-family: "Stack Sans Headline", sans-serif;
+  border: 0.5px solid #8c8c8c;
+  border-radius: 10px;
+  padding: 2rem;
+  font-weight: 200;
+  scrollbar-width: none;
+}
+
+.policy-title,
+.policy-p-title {
+  font-weight: 500;
+  color: #7dd3fc;
+}
+
+.policy-title {
+  font-size: 1.2rem;
+}
+
+.policy-p.last-updated {
+  font-size: 0.85rem;
+}
+
+.policy-p {
+  margin-bottom: 1rem;
+}
+
+.policy-p ul li {
+  margin: 5px 0;
+}
+
+.policy-p ul li a {
+  color: inherit;
+}
+
+.close-policy {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  color: #7dd3fc;
+}
+
+/** MEDIA QUERIES */
+@media (max-width: 1024px) {
+  #policyModal {
+    width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  #policyModal {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content .name h1 {
+    font-size: 4rem;
+  }
+}
