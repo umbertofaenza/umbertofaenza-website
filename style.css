@@ -161,3 +161,13 @@ a:focus-visible {
     font-size: 4rem;
   }
 }
+
+/** SVGs */
+.icon-svg {
+  width: 3rem;
+  fill: currentColor;
+}
+
+.close-policy .icon-svg {
+  width: 2rem;
+}
